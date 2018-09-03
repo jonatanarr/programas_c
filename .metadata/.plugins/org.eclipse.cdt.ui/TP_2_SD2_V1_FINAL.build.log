@@ -1,0 +1,11 @@
+20:28:30 **** Incremental Build of configuration Debug for project TP_2_SD2_V1_FINAL ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_LCD.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31504	    128	   2176	  33808	   8410	SD2_LCD.elf
+'Finished building: SD2_LCD.siz'
+' '
+
+20:28:31 Build Finished (took 297ms)
+

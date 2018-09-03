@@ -1,0 +1,15 @@
+19:16:48 **** Incremental Build of configuration Debug for project TP3_ARROYO_GIORGIO_POLLING_SYSTICK ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: TP3_ARROYO_GIORGIO_POLLING_SYSTICK.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/TP3_ARROYO_GIORGIO_POLLING_SYSTICK/Project_Settings/Linker_Files" -Wl,-Map,"TP3_ARROYO_GIORGIO_POLLING_SYSTICK.map" -specs=nano.specs -specs=nosys.specs -o "TP3_ARROYO_GIORGIO_POLLING_SYSTICK.elf"  ./Sources/board.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   
+'Finished building target: TP3_ARROYO_GIORGIO_POLLING_SYSTICK.elf'
+' '
+
+19:16:48 Build Finished (took 611ms)
+

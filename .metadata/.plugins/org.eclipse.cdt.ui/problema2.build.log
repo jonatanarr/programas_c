@@ -1,0 +1,11 @@
+17:07:23 **** Incremental Build of configuration Debug for project problema2 ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_problema_01.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10448	    120	   2112	  12680	   3188	SD2_problema_01.elf
+'Finished building: SD2_problema_01.siz'
+' '
+
+17:07:24 Build Finished (took 953ms)
+

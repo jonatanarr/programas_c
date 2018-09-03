@@ -1,0 +1,20 @@
+12:37:12 **** Incremental Build of configuration Debug for project ej_9_a ****
+make all 
+'Building file: ../Sources/board.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/board.d" -MT"Sources/board.o" -c -o "Sources/board.o" "../Sources/board.c"
+'Finished building: ../Sources/board.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: ej_9.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/ej_9_a/Project_Settings/Linker_Files" -Wl,-Map,"ej_9.map" -specs=nano.specs -specs=nosys.specs -o "ej_9.elf"  ./Sources/board.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   
+'Finished building target: ej_9.elf'
+' '
+
+12:37:13 Build Finished (took 875ms)
+

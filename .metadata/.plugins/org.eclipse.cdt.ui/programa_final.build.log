@@ -1,0 +1,45 @@
+09:36:09 **** Incremental Build of configuration Debug for project programa_final ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+In file included from ../Sources/main.c:3:0:
+../Sources/Macros.h: In function 'EnableSysTick':
+../Sources/Macros.h:7:2: error: 'SYST_RVR' undeclared (first use in this function)
+  SYST_RVR = 0x5B8000;
+  ^
+../Sources/Macros.h:7:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/Macros.h:8:2: error: 'SYST_CSR' undeclared (first use in this function)
+  SYST_CSR |= SysTick_CSR_CLKSOURCE_MASK ;  
+  ^
+../Sources/Macros.h:8:14: error: 'SysTick_CSR_CLKSOURCE_MASK' undeclared (first use in this function)
+  SYST_CSR |= SysTick_CSR_CLKSOURCE_MASK ;  
+              ^
+../Sources/Macros.h: In function 'timerOn':
+../Sources/Macros.h:15:3: error: 'SYST_CSR' undeclared (first use in this function)
+   SYST_CSR |= SysTick_CSR_ENABLE_MASK;
+   ^
+../Sources/Macros.h:15:15: error: 'SysTick_CSR_ENABLE_MASK' undeclared (first use in this function)
+   SYST_CSR |= SysTick_CSR_ENABLE_MASK;
+               ^
+../Sources/Macros.h: In function 'timerOff':
+../Sources/Macros.h:21:3: error: 'SYST_CSR' undeclared (first use in this function)
+   SYST_CSR &= (SysTick_CSR_ENABLE_MASK);
+   ^
+../Sources/Macros.h:21:16: error: 'SysTick_CSR_ENABLE_MASK' undeclared (first use in this function)
+   SYST_CSR &= (SysTick_CSR_ENABLE_MASK);
+                ^
+../Sources/Macros.h:22:3: error: 'SYST_RVR' undeclared (first use in this function)
+   SYST_RVR = 0x5B8000;
+   ^
+../Sources/Macros.h: In function 'EnableADC':
+../Sources/Macros.h:91:2: error: 'NVIC_IPR3' undeclared (first use in this function)
+  NVIC_IPR3 |= 1<<31; //Fijo baja prioridad al ADCO; 
+  ^
+../Sources/Macros.h:92:2: error: 'NVIC_ISER' undeclared (first use in this function)
+  NVIC_ISER |= 1<<15; //Habilito Interrupciones ADC0 en el micro 
+  ^
+make: *** [Sources/main.o] Error 1
+
+09:36:09 Build Finished (took 237ms)
+

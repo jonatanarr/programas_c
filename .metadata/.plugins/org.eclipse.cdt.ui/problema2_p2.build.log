@@ -1,0 +1,51 @@
+18:16:26 **** Incremental Build of configuration Debug for project problema2_p2 ****
+make all 
+'Building file: ../board/src/board.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"board/src/board.d" -MT"board/src/board.o" -c -o "board/src/board.o" "../board/src/board.c"
+'Finished building: ../board/src/board.c'
+' '
+'Building file: ../board/src/mma8451.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"board/src/mma8451.d" -MT"board/src/mma8451.o" -c -o "board/src/mma8451.o" "../board/src/mma8451.c"
+'Finished building: ../board/src/mma8451.c'
+' '
+'Building file: ../Sources/key.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/key.d" -MT"Sources/key.o" -c -o "Sources/key.o" "../Sources/key.c"
+'Finished building: ../Sources/key.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building file: ../Project_Settings/Startup_Code/startup.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+'Finished building: ../Project_Settings/Startup_Code/startup.c'
+' '
+'Building file: ../Project_Settings/Startup_Code/startup_MKL46Z4.S'
+'Invoking: Cross ARM GNU Assembler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MKL46Z4.d" -MT"Project_Settings/Startup_Code/startup_MKL46Z4.o" -c -o "Project_Settings/Startup_Code/startup_MKL46Z4.o" "../Project_Settings/Startup_Code/startup_MKL46Z4.S"
+'Finished building: ../Project_Settings/Startup_Code/startup_MKL46Z4.S'
+' '
+'Building file: ../Project_Settings/Startup_Code/system_MKL46Z4.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"../C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"../C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MKL46Z4.d" -MT"Project_Settings/Startup_Code/system_MKL46Z4.o" -c -o "Project_Settings/Startup_Code/system_MKL46Z4.o" "../Project_Settings/Startup_Code/system_MKL46Z4.c"
+'Finished building: ../Project_Settings/Startup_Code/system_MKL46Z4.c'
+' '
+'Building target: SD2_I2C.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/problema2_p2/Project_Settings/Linker_Files" -L"C:\Freescale\KSDK_1.3.0/lib/ksdk_platform_lib/kds/KL46Z4/debug" -Wl,-Map,"SD2_I2C.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "SD2_I2C.elf"  ./board/src/board.o ./board/src/mma8451.o  ./Sources/key.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   -lksdk_platform
+'Finished building target: SD2_I2C.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_I2C.elf"
+   text	   data	    bss	    dec	    hex	filename
+  14016	    124	   2132	  16272	   3f90	SD2_I2C.elf
+'Finished building: SD2_I2C.siz'
+' '
+
+18:16:30 Build Finished (took 4s.461ms)
+

@@ -1,0 +1,11 @@
+13:56:37 **** Incremental Build of configuration Debug for project ej_1 ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "ej_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1624	    108	   2092	   3824	    ef0	ej_1.elf
+'Finished building: ej_1.siz'
+' '
+
+13:56:38 Build Finished (took 683ms)
+

@@ -1,0 +1,11 @@
+11:04:20 **** Build of configuration Debug for project TESTING_UART_RS485 ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+  14676	    124	   2180	  16980	   4254	SD2_UART.elf
+'Finished building: SD2_UART.siz'
+' '
+
+11:04:21 Build Finished (took 297ms)
+

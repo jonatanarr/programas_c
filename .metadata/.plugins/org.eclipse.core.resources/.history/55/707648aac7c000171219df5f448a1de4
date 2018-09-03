@@ -1,0 +1,22 @@
+#include "MKL46Z4.h"
+
+static int i = 0;
+
+int main(void)
+{
+	int16_t lectura;
+	double lectura_en_grados;
+
+	SIM_SCGC6 |= 1<<27;
+	ADC0_CFG1 = 0x7D;
+
+
+
+    for (;;) {
+    	ADC0_SC1A = 0x1A;
+    	while  ((ADC0_SC1A & 0x80) == 0){}
+    	lectura = ADC0_RA;
+    }
+
+    return 0;
+}

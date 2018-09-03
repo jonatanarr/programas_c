@@ -1,0 +1,11 @@
+21:58:12 **** Incremental Build of configuration Debug for project Leds_alternados ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "Leds_alternados.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1412	    108	   2076	   3596	    e0c	Leds_alternados.elf
+'Finished building: Leds_alternados.siz'
+' '
+
+21:58:13 Build Finished (took 244ms)
+

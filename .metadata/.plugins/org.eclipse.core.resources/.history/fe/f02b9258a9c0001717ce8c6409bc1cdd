@@ -1,0 +1,61 @@
+#include "IO.h"
+int SW1=0;
+void P1_control();
+
+int main(void)
+{
+
+	//inicializar GPIO
+	inicializacion_IO();
+	led_verde(0);
+	led_rojo(0);
+	PORTC_PCR3|= PORT_PCR_IRQC(9); //interrupciones pin3 del puerto C por flanco creciente
+	NVIC_SetPriority(PORTC_PORTD_IRQn, 0);
+	NVIC_EnableIRQ(PORTC_PORTD_IRQn);
+
+    for (;;) {
+    	//diferentes subsistemas
+        P1_control();
+        //P2_contrador()   -< para otra implementación
+    }
+    return 0;
+}
+ void P1_control(){
+	 //definicion y marcado inicial
+	 static int8_t L1=1 , L2=0,L3=0, pulsadas=0;
+	 int8_t Entrada;
+	 int8_t T1,T2,T3,T4;
+
+	 //adquisición de entradas
+	 Entrada= SW1;
+	 SW1=0;
+
+	 //estado transiciones
+	 T1 = L1 && Entrada;
+	 T2 = L2 && (!Entrada);
+	 T3 = L1 && (pulsadas == 5);
+	 T4 = L3 && Entrada;
+
+	 //evolucion marcado
+	 if (T1) {L1=0;L2=1; pulsadas++;}
+	 if (T2) {L2=0;L1=1;}
+	 if (T3) {L1=0;L3=1;}
+	 if (T4) {L3=0;L2=1;pulsadas=0;}
+
+	 //producir salidas
+	 led_rojo(L3);
+
+ }
+
+ void PORTC_PORTD_IRQHandler()
+ {
+	PORTC_PCR3|=PORT_PCR_ISF_MASK;//limpio la bandera
+	SW1=1;
+ }
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// EOF
+////////////////////////////////////////////////////////////////////////////////

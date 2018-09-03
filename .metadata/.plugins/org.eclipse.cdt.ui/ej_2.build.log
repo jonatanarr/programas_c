@@ -1,0 +1,21 @@
+15:08:53 **** Incremental Build of configuration Debug for project ej_2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: ej_2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/ej_2/Project_Settings/Linker_Files" -Wl,-Map,"ej_2.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "ej_2.elf"  ./Sources/board.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   
+'Finished building target: ej_2.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "ej_2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1720	    108	   2092	   3920	    f50	ej_2.elf
+'Finished building: ej_2.siz'
+' '
+
+15:08:55 Build Finished (took 2s.105ms)
+

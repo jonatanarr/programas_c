@@ -1,0 +1,11 @@
+19:05:48 **** Incremental Build of configuration Debug for project SD2_CLOCK ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_CLOCK.elf"
+   text	   data	    bss	    dec	    hex	filename
+  15176	    124	   2100	  17400	   43f8	SD2_CLOCK.elf
+'Finished building: SD2_CLOCK.siz'
+' '
+
+19:05:49 Build Finished (took 938ms)
+

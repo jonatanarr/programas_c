@@ -1,0 +1,11 @@
+18:10:10 **** Build of configuration Debug for project implementacion_timer_con_systick ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "implementacion_timers.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1276	    108	   2084	   3468	    d8c	implementacion_timers.elf
+'Finished building: implementacion_timers.siz'
+' '
+
+18:10:10 Build Finished (took 409ms)
+

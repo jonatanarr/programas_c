@@ -1,0 +1,29 @@
+// Memory Configuration File
+//
+// Description:
+//  A memory configuration file contains commands that define the legally accessible
+//  areas of memory for your specific board. Useful for example when the debugger
+//  tries to display the content of a "char *" variable, that has not yet been initialized.
+//  In this case the debugger may try to read from a bogus address, which could cause a
+//  bus error.
+//
+// Board:
+//  Kinetis KL46Z256M4
+//
+// Reference:
+//  -
+
+
+// All reserved ranges read back 0xBABA...
+reservedchar 0xBA
+
+usederivative "MKL46Z4"
+
+//         Memory Map:
+//         ----------------------------------------------------------------------
+
+range      0x00000000 0x0003FFFF 4 ReadWrite    // 256KB Code Flash
+reserved   0x00040000 0x1FFFDFFF
+range      0x1FFFE000 0x20005FFF 4 ReadWrite    // 32KB On chip SRAM
+reserved   0x20006000 0x3FFFFFFF
+reserved   0x60000000 0xDFFFFFFF

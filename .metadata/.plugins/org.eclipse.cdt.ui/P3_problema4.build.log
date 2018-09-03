@@ -1,0 +1,7 @@
+17:46:58 **** Clean-only build of configuration Debug for project P3_problema4 ****
+make -j4 clean 
+rm -rf  SD2_UART_RING_BUFFER.siz  ./board/src/board.o ./board/src/uart0rb.o  ./Sources/main.o ./Sources/ringBuffer.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o  ./board/src/board.d ./board/src/uart0rb.d  ./Sources/main.d ./Sources/ringBuffer.d  ./Project_Settings/Startup_Code/startup.d ./Project_Settings/Startup_Code/system_MKL46Z4.d  ./Project_Settings/Startup_Code/startup_MKL46Z4.d  SD2_UART_RING_BUFFER.elf
+' '
+
+17:46:58 Build Finished (took 559ms)
+

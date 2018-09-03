@@ -1,0 +1,37 @@
+17:34:10 **** Incremental Build of configuration Debug for project problema4_p3 ****
+make -j4 all 
+'Building file: ../board/src/uart0RB.c'
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"board/src/uart0RB.d" -MT"board/src/uart0RB.o" -c -o "board/src/uart0RB.o" "../board/src/uart0RB.c"
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../board/src/uart0RB.c:174:10: error: conflicting types for 'uart0RB_recv'
+ uint16_t uart0RB_recv(uint8_t *pData, uint16_t size)
+          ^
+In file included from ../board/src/uart0RB.c:41:0:
+../board/inc/uart0RB.h:96:10: note: previous declaration of 'uart0RB_recv' was here
+ uint16_t uart0RB_recv(int8_t *pData, uint16_t size);
+          ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:103:13: warning: pointer targets in passing argument 1 of 'uart0RB_recv' differ in signedness [-Wpointer-sign]
+             ret = uart0RB_recv(buffer, sizeof(buffer)); //descargo los datos del buffer circular en el buffer de procesamiento
+             ^
+In file included from ../Sources/main.c:44:0:
+../board/inc/uart0RB.h:96:10: note: expected 'int8_t *' but argument is of type 'uint8_t *'
+ uint16_t uart0RB_recv(int8_t *pData, uint16_t size);
+          ^
+../Sources/main.c:106:14: warning: pointer targets in passing argument 1 of 'uart0RB_send' differ in signedness [-Wpointer-sign]
+              uart0RB_send(buffer, ret);
+              ^
+In file included from ../Sources/main.c:44:0:
+../board/inc/uart0RB.h:88:10: note: expected 'int8_t *' but argument is of type 'uint8_t *'
+ uint16_t uart0RB_send(int8_t *pData, uint16_t size);
+          ^
+make: *** [board/src/uart0RB.o] Error 1
+make: *** Waiting for unfinished jobs....
+'Finished building: ../Sources/main.c'
+' '
+
+17:34:11 Build Finished (took 861ms)
+

@@ -1,0 +1,35 @@
+17:04:05 **** Incremental Build of configuration Debug for project TP_3_SD2_V1 ****
+make -j4 all 
+'Building file: ../board/src/board.c'
+'Building file: ../board/src/mma8451.c'
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"board/src/board.d" -MT"board/src/board.o" -c -o "board/src/board.o" "../board/src/board.c"
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"board/src/mma8451.d" -MT"board/src/mma8451.o" -c -o "board/src/mma8451.o" "../board/src/mma8451.c"
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'mefEnvDatos':
+../Sources/main.c:357:10: warning: variable 'env' set but not used [-Wunused-but-set-variable]
+  uint8_t env;
+          ^
+'Finished building: ../board/src/mma8451.c'
+'Finished building: ../board/src/board.c'
+' '
+' '
+'Finished building: ../Sources/main.c'
+' '
+'Building target: SD2_UART_RING_BUFFER.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/TP_3_SD2_V1/Project_Settings/Linker_Files" -L"C:\Freescale\KSDK_1.3.0/lib/ksdk_platform_lib/kds/KL46Z4/debug" -Wl,-Map,"SD2_UART_RING_BUFFER.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "SD2_UART_RING_BUFFER.elf"  ./board/src/board.o ./board/src/mma8451.o  ./Sources/main.o ./Sources/ringBuffer.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   -lksdk_platform
+'Finished building target: SD2_UART_RING_BUFFER.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_UART_RING_BUFFER.elf"
+   text	   data	    bss	    dec	    hex	filename
+  26384	    128	   2200	  28712	   7028	SD2_UART_RING_BUFFER.elf
+'Finished building: SD2_UART_RING_BUFFER.siz'
+' '
+
+17:04:07 Build Finished (took 1s.484ms)
+

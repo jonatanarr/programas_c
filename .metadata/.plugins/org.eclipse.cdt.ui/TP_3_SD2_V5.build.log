@@ -1,0 +1,74 @@
+15:06:28 **** Incremental Build of configuration Debug for project TP_3_SD2_V5 ****
+make -j4 all 
+'Building file: ../Sources/archivoMef.c'
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/archivoMef.d" -MT"Sources/archivoMef.o" -c -o "Sources/archivoMef.o" "../Sources/archivoMef.c"
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/archivoMef.c: In function 'mefEnvDatos':
+../Sources/archivoMef.c:349:10: warning: variable 'env' set but not used [-Wunused-but-set-variable]
+  uint8_t env;
+          ^
+../Sources/archivoMef.c: At top level:
+../Sources/archivoMef.c:259:13: warning: 'mefRecDatos' defined but not used [-Wunused-function]
+ static void mefRecDatos(void)
+             ^
+../Sources/archivoMef.c:337:13: warning: 'mefEnvDatos' defined but not used [-Wunused-function]
+ static void mefEnvDatos(void)
+             ^
+../Sources/archivoMef.c:439:13: warning: 'mefAccionLed' defined but not used [-Wunused-function]
+ static void mefAccionLed (void)
+             ^
+../Sources/archivoMef.c:488:13: warning: 'mefAccionSw' defined but not used [-Wunused-function]
+ static void mefAccionSw (void)
+             ^
+../Sources/archivoMef.c:538:13: warning: 'mefAccionAcc' defined but not used [-Wunused-function]
+ static void mefAccionAcc (void)
+             ^
+../Sources/archivoMef.c:574:13: warning: 'mefAccionPerifericos' defined but not used [-Wunused-function]
+ static void mefAccionPerifericos (void)
+             ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:75:5: warning: implicit declaration of function 'PIT_Init' [-Wimplicit-function-declaration]
+     PIT_Init();  // REVISAR SI HACE FALTA ESTO
+     ^
+In file included from ../Sources/main.c:50:0:
+../Sources/main.c: At top level:
+../Includes/archivoMef.h:69:13: warning: 'mefAccionAcc' used but never defined [enabled by default]
+ static void mefAccionAcc ();
+             ^
+../Includes/archivoMef.h:70:13: warning: 'mefAccionLed' used but never defined [enabled by default]
+ static void mefAccionLed ();
+             ^
+../Includes/archivoMef.h:71:13: warning: 'mefAccionPerifericos' used but never defined [enabled by default]
+ static void mefAccionPerifericos ();
+             ^
+../Includes/archivoMef.h:72:13: warning: 'mefAccionSw' used but never defined [enabled by default]
+ static void mefAccionSw ();
+             ^
+../Includes/archivoMef.h:73:13: warning: 'mefEnvDatos' used but never defined [enabled by default]
+ static void mefEnvDatos();
+             ^
+../Includes/archivoMef.h:74:13: warning: 'mefRecDatos' used but never defined [enabled by default]
+ static void mefRecDatos();
+             ^
+'Finished building: ../Sources/main.c'
+'Finished building: ../Sources/archivoMef.c'
+' '
+' '
+'Building target: SD2_UART_RING_BUFFER.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/TP_3_SD2_V5/Project_Settings/Linker_Files" -L"C:\Freescale\KSDK_1.3.0/lib/ksdk_platform_lib/kds/KL46Z4/debug" -Wl,-Map,"SD2_UART_RING_BUFFER.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "SD2_UART_RING_BUFFER.elf"  ./board/src/board.o ./board/src/board_rs485.o ./board/src/mma8451.o  ./Sources/archivoMef.o ./Sources/main.o ./Sources/ringBuffer.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   -lksdk_platform
+./Sources/main.o: In function `main':
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:83: undefined reference to `mefRecDatos'
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:84: undefined reference to `mefAccionPerifericos'
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:85: undefined reference to `mefAccionLed'
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:86: undefined reference to `mefAccionSw'
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:87: undefined reference to `mefAccionAcc'
+C:\Users\Jonatan\workspace.kds\TP_3_SD2_V5\Debug/../Sources/main.c:88: undefined reference to `mefEnvDatos'
+collect2.exe: error: ld returned 1 exit status
+make: *** [SD2_UART_RING_BUFFER.elf] Error 1
+
+15:06:31 Build Finished (took 2s.812ms)
+

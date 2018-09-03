@@ -1,0 +1,14 @@
+13:30:48 **** Build of configuration Debug for project prueba ****
+make all 
+'Building file: ../Sources/board.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/board.d" -MT"Sources/board.o" -c -o "Sources/board.o" "../Sources/board.c"
+In file included from ../Sources/board.c:3:0:
+../Sources/board.h:7:42: fatal error: fsl_device_registers.h: No such file or directory
+ #include "fsl_device_registers.h" //nuevo
+                                          ^
+compilation terminated.
+make: *** [Sources/board.o] Error 1
+
+13:30:49 Build Finished (took 1s.403ms)
+

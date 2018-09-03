@@ -1,0 +1,11 @@
+13:16:54 **** Incremental Build of configuration Debug for project implementacion_RDP_diapositiva ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "implementacion_RDP_diapositiva.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1792	    108	   2092	   3992	    f98	implementacion_RDP_diapositiva.elf
+'Finished building: implementacion_RDP_diapositiva.siz'
+' '
+
+13:16:56 Build Finished (took 2s.166ms)
+

@@ -1,0 +1,25 @@
+19:07:41 **** Incremental Build of configuration Debug for project TP_2_SD2_V4 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -I../Includes -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'mefDetCaida':
+../Sources/main.c:299:3: warning: implicit declaration of function 'mma8451_getFfall' [-Wimplicit-function-declaration]
+   if(mma8451_getFfall())
+   ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: SD2_LCD.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/TP_2_SD2_V4/Project_Settings/Linker_Files" -L"C:\Freescale\KSDK_1.3.0/lib/ksdk_platform_lib/kds/KL46Z4/debug" -Wl,-Map,"SD2_LCD.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "SD2_LCD.elf"  ./board/src/LCD.o ./board/src/LED_S401.o ./board/src/board.o ./board/src/mma8451.o  ./Sources/key.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   -lksdk_platform
+'Finished building target: SD2_LCD.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_LCD.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31624	    128	   2184	  33936	   8490	SD2_LCD.elf
+'Finished building: SD2_LCD.siz'
+' '
+
+19:07:43 Build Finished (took 1s.381ms)
+

@@ -1,0 +1,13 @@
+21:47:20 **** Incremental Build of configuration Debug for project Problema 1 ****
+make all 
+'Building file: ../board/src/board.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"C:\Users\Jonatan\workspace.kds\Problema 1\board\inc" -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -std=c99 -MMD -MP -MF"board/src/board.d" -MT"board/src/board.o" -c -o "board/src/board.o" "../board/src/board.c"
+../board/src/board.c:38:26: fatal error: fsl_port_hal.h: No such file or directory
+ #include "fsl_port_hal.h"
+                          ^
+compilation terminated.
+make: *** [board/src/board.o] Error 1
+
+21:47:21 Build Finished (took 1s.391ms)
+

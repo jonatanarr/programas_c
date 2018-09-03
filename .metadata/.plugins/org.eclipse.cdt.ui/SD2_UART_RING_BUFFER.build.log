@@ -1,0 +1,11 @@
+17:29:55 **** Incremental Build of configuration Debug for project SD2_UART_RING_BUFFER ****
+make -j4 all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_UART_RING_BUFFER.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12356	    120	   2112	  14588	   38fc	SD2_UART_RING_BUFFER.elf
+'Finished building: SD2_UART_RING_BUFFER.siz'
+' '
+
+17:29:55 Build Finished (took 302ms)
+

@@ -1,0 +1,24 @@
+18:28:32 **** Incremental Build of configuration Debug for project SD2_UART_probEjTp ****
+make -j4 all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL46Z256VLH4" -I"../Sources" -I"../Includes" -I../board/inc -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL46Z4/include" -I"C:\Freescale\KSDK_1.3.0/platform/hal/inc" -I"C:\Freescale\KSDK_1.3.0/platform/system/src/clock/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/hal/src/sim/MKL46Z4" -I"C:\Freescale\KSDK_1.3.0/platform/system/inc" -I"C:\Freescale\KSDK_1.3.0/platform/osa/inc" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:219:13: warning: 'accionesLed' defined but not used [-Wunused-function]
+ static void accionesLed(uint8_t *pBuf)
+             ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: SD2_UART_RING_BUFFER.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL46Z256xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/Jonatan/workspace.kds/SD2_UART_probEjTp/Project_Settings/Linker_Files" -L"C:\Freescale\KSDK_1.3.0/lib/ksdk_platform_lib/kds/KL46Z4/debug" -Wl,-Map,"SD2_UART_RING_BUFFER.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "SD2_UART_RING_BUFFER.elf"  ./board/src/board.o  ./Sources/main.o ./Sources/ringBuffer.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL46Z4.o ./Project_Settings/Startup_Code/system_MKL46Z4.o   -lksdk_platform
+'Finished building target: SD2_UART_RING_BUFFER.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_UART_RING_BUFFER.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12680	    120	   2136	  14936	   3a58	SD2_UART_RING_BUFFER.elf
+'Finished building: SD2_UART_RING_BUFFER.siz'
+' '
+
+18:28:34 Build Finished (took 1s.269ms)
+

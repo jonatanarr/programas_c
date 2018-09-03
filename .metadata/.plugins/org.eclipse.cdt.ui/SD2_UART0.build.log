@@ -1,0 +1,11 @@
+16:01:49 **** Incremental Build of configuration Debug for project SD2_UART0 ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "SD2_I2C.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13520	    120	   2112	  15752	   3d88	SD2_I2C.elf
+'Finished building: SD2_I2C.siz'
+' '
+
+16:01:49 Build Finished (took 305ms)
+
